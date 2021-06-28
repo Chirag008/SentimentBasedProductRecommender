@@ -1,6 +1,6 @@
 function loader_enable(){
     document.getElementById("loader").style.display="block";
-    document.getElementsByClassName("error_message")[0].textContent="";
+    document.getElementById('result').style.display="none"
 }
 
 function loader_disable(){
