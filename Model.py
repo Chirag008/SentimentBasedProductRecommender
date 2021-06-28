@@ -13,8 +13,6 @@ import joblib
 from sklearn.metrics.pairwise import pairwise_distances
 from imblearn.over_sampling import RandomOverSampler
 
-nltk.download('stopwords')
-nltk.download('wordnet')
 
 data_file_location = 'data/sample30.csv'
 
@@ -277,6 +275,8 @@ class dataPreprocessor:
 
 
 if __name__ == '__main__':
+    nltk.download('stopwords')
+    nltk.download('wordnet')
     sentiment_analyser_model_builder = sentimentAnalyser()
     product_recommender_model_builder = productRecommender()
 
