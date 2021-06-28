@@ -4,7 +4,8 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from nltk.stem import PorterStemmer
 
-
+nltk.download('stopwords')
+nltk.download('wordnet')
 
 class dataPreprocessor:
     """
